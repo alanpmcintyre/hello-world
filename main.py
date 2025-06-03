@@ -1,5 +1,5 @@
 from greetings import (hello_english, hello_spanish, hello_french, hello_german,
-                       goodbye_english, goodbye_spanish, goodbye_french)
+                       goodbye_english, goodbye_spanish, goodbye_french, goodbye_german)
 from config import DEFAULT_LANGUAGE, SHOW_MENU
 
 name = input("What's your name? ")
@@ -24,7 +24,7 @@ if SHOW_MENU:
         print(goodbye_french())
     elif choice == "4":
         print(hello_german(name))
-        print("Auf Wiedersehen!")
+        print(goodbye_german())
     else:
         print("Invalid choice! Using default...")
         print(hello_english(name))
@@ -41,4 +41,4 @@ else:
         print(goodbye_french())
     elif DEFAULT_LANGUAGE == "german":
         print(hello_german(name))
-        print("Auf Wiedersehen!")
+        print(goodbye_german())

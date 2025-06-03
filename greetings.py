@@ -18,3 +18,6 @@ def goodbye_spanish():
 
 def goodbye_french():
     return "Au revoir! Passe une bonne journée!"
+
+def goodbye_german():
+    return "Auf Wiedersehen!"
