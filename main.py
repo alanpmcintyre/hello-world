@@ -30,10 +30,8 @@ if SHOW_MENU:
         print(hello_english(name))
         print(goodbye_english())
 else:
-    if DEFAULT_LANGUAGE == "english":
-        print(hello_english(name))
-        print(goodbye_english())
-    elif DEFAULT_LANGUAGE == "spanish":
+    # Use the default language when menu is disabled
+    if DEFAULT_LANGUAGE == "spanish":
         print(hello_spanish(name))
         print(goodbye_spanish())
     elif DEFAULT_LANGUAGE == "french":
@@ -42,3 +40,6 @@ else:
     elif DEFAULT_LANGUAGE == "german":
         print(hello_german(name))
         print(goodbye_german())
+    else:  # default to english
+        print(hello_english(name))
+        print(goodbye_english())
